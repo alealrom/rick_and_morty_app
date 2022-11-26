@@ -1,0 +1,62 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.card__character {
+    padding-bottom: 20px;
+}
+
+.card__figure {
+    width: 339px;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+.card__image {
+    border: 20px solid #ffffff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card__body {
+    width: 341px;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 0;
+}
+
+.card__nameCharacter {
+    margin: 0;
+    text-align: center;
+}
+
+.card__speciesCharacter,
+.card__locationCharacter,
+.card__originCharacter {
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+    .card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+}
