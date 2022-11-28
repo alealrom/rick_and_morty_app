@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Header } from './Header';
 import { Characters } from './Characters';
 import { Pagination } from './Pagination';
+import { Footer } from './Footer';
 import './App.css';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Characters characters={ characters }/>
         </article>
       </section>
+      <Footer/>
     </React.Fragment>
   );
 }
