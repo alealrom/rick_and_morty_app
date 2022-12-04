@@ -1,10 +1,10 @@
 .navButtons__list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     padding-top: 10px;
     padding-bottom: 30px;
     padding-left: 0;
+    justify-content: center;
+    gap: 20px;  
 }
 
 .navButtons__item {
@@ -13,18 +13,18 @@
 
 .navButtons__button {
     padding: 10px;
-    text-transform: uppercase;
-    font-size: 16px;
     font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
     border: none;
     border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
     will-change: filter;
 }
 
 .navButtons__button:hover {
-    background-color: #000000;
     color: #ffffff;
+    background-color: #000000;
     filter: drop-shadow(0 0 1em #646cffaa);
 }

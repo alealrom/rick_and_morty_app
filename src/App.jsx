@@ -43,7 +43,7 @@ function App() {
           onPrevious={ onPrevious }
           onNext={ onNext }
           />
-        <article class='allCharacters'>
+        <article className='allCharacters'>
           <Characters characters={ characters }/>
         </article>
       </section>

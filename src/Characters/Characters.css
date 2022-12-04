@@ -1,8 +1,7 @@
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);    justify-items: center;
     gap: 10px;
-    justify-items: center;
 }
 
 .card__character {
@@ -11,10 +10,11 @@
 
 .card__figure {
     width: 339px;
+    margin: 0;
     border: 1px solid #ffffff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin: 0;
+    
 }
 
 .card__image {
@@ -26,9 +26,9 @@
 .card__body {
     width: 341px;
     margin: 0;
-    background-color: #ffffff;
-    color: #000000;
     padding: 15px 0;
+    color: #000000;
+    background-color: #ffffff; 
 }
 
 .card__nameCharacter {
@@ -39,19 +39,19 @@
 .card__speciesCharacter,
 .card__locationCharacter,
 .card__originCharacter {
-    text-align: center;
     margin: 0;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1400px) {
     .card {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media only screen and (max-width: 1080px) {
     .card {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
