@@ -7,7 +7,7 @@ function Characters({ characters }) {
       {characters.map((item, index) => (
         <section key={ index } className="card__character">
           <figure className="card__figure">
-            <img cclassName="card__image" src={ item.image } alt=""></img>
+            <img className="card__image" src={ item.image } alt=""></img>
           </figure>
           <article className="card__body">
             <h2 className="card__nameCharacter">{ item.name }</h2>
